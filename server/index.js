@@ -5,11 +5,13 @@ import { Pinecone } from "@pinecone-database/pinecone";
 import { fileURLToPath } from "url";
 import path, { dirname } from "path";
 import fs from "fs/promises";
+import { GoogleGenAI } from "@google/genai";
 
 dotenv.config();
 const app = express();
 
 app.use(cors());
+app.use(express.json());
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -90,8 +92,15 @@ async function main() {
 
   await upsertChunks(chunked_docs);
 }
-
 main();
+
+const ai = new GoogleGenAI({
+  apiKey: process.env.GEMINI_API_KEY,
+});
+const config = {
+  responseMimeType: "text/plain",
+};
+const model = "gemini-2.0-flash-lite";
 
 app.get("/ask", async (req, res) => {
   const { question } = req.query;
@@ -108,7 +117,33 @@ app.get("/ask", async (req, res) => {
     },
   });
 
-  res.json(results);
+  const contents = [
+    {
+      role: "user",
+      parts: [
+        {
+          text: `
+          You are a helpful assistant that can answer questions about the UCL 2020-2025 reports.
+          Here are the reports: ${JSON.stringify(results)}
+          Here is the question: ${question}
+          `,
+        },
+      ],
+    },
+  ];
+
+  const response = await ai.models.generateContentStream({
+    model,
+    config,
+    contents,
+  });
+
+  let responseText = "";
+  for await (const chunk of response) {
+    responseText += chunk.text;
+  }
+
+  res.json(responseText);
 });
 
 app.listen(process.env.PORT, () => {
