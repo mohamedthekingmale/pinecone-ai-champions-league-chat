@@ -1,1 +1,1 @@
-init readme
+a chat that knows everything about UCL seasons from 20/21 to 24/25
